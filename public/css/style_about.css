@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+    /* background-color: var(--main-bg); */
+}
+:root{
+    --main-bg:rgb(0,0,0);
+    --main-color:#fffaf0;
+    --second-color:rgb(248, 248, 15);
+    --second-bg:rgb(57, 54, 54);
+    --hover-color:rgb(241, 193, 193);
+}
+/* html{
+    /* font-size:63.5%; 
+}*/
+.row{
+    margin:0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main_menu{
+    background-color: var(--second-bg);
+}
+.navbar{
+    background-color: var(--second-bg);
+    color:#fffaf0;
+    padding:1.5rem 0;
+} 
+/* .navbar li{
+    margin-left:1rem;
+} */
+.navbar-toggler{
+    background-color:#fffaf0;
+}
+.navbar a{
+    color:var(--main-color);
+}
+.navbar a:hover{
+   color:var(--hover-color);
+}
+.fa-snowflake-o{
+    transition:all linear;
+    animation: rot 2s linear infinite;
+}
+@keyframes rot{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+}
+/* tp */
+button{
+    width:7em;
+    padding:0.4rem;
+    background: var(--second-bg);
+}
+button a{
+    text-decoration: none;
+    color:var(--main-color);
+    outline: none;
+}
+button a:hover{
+    color:var(--hover-color);
+}
+ /* main header  */
+
+ .main_header_left{
+    height:35rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .main_header_left h1{
+    margin:1rem 0 4rem 0;
+    font-size: 3rem;
+    text-transform: capitalize;
+
+ }
+ .main_header_right{
+    height:35rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .main_header{
+    background-color: var(--main-bg);
+    color:var(--second-color);
+ }
+ .word{
+    color:var(--main-color);
+    text-decoration: solid;
+    font-size:3rem;
+
+ }
+ .wrap{
+    height: 100vh;
+    background-color: var(--main-bg);
+ }
+
+ /* footer  */
+
+ footer{
+    width:100%;
+    background-color: var(--main-bg); 
+    margin-top:auto; 
+ }
+ footer p{
+    margin:0;
+    text-align: center;
+    color:var(--second-color);
+    line-height:3rem;
+    font-size: 1.2rem;
+ }
+
+/* responsive code  */
+@media(max-width:768px){
+    .main_header_left{
+        height:auto;
+        margin:5rem 0;
+    }
+    .main_header_right{
+       height: auto;
+       margin-top: 3rem;
+    }
+}
